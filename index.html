@@ -8,11 +8,9 @@ Description: This file contains all structure of my portfolio page
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
-  <title>Mr. Mario | Plumber
-  </title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus velit eget nibh mollis interdum.">
-  <meta name="author" content="Krishnakanth Alagiri">
+  <title>Linh Dang | FTU Server</title> <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Portfolio of Linh Dang">
+  <meta name="author" content="Linh Dang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -20,7 +18,30 @@ Description: This file contains all structure of my portfolio page
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/effects.css">
   <link rel="stylesheet" href="assets/css/retro.css">
-</head>
+
+  <style>
+    .entry-images {
+      display: flex;
+      gap: 15px;
+      margin-top: 15px;
+      flex-wrap: wrap; /* Tự xuống dòng nếu trên điện thoại */
+    }
+
+    .entry-images img {
+      height: 120px;          /* Chiều cao cố định */
+      width: auto;
+      border: 4px solid #fff; /* Viền vuông dày hợp với style Retro */
+      border-radius: 0;       /* Không bo góc để giữ nét Pixel */
+      image-rendering: pixelated; /* Giữ độ sắc nét */
+      transition: transform 0.2s;
+    }
+
+    .entry-images img:hover {
+      transform: scale(1.05);
+      border-color: #f7b233; /* Đổi màu viền khi di chuột vào */
+    }
+  </style>
+  </head>
 <body>
   <section id="top" class="hero">
     <div id="hero-overlay">
