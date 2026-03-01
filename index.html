@@ -116,6 +116,51 @@ Description: This file contains all structure of my portfolio page
       </li>
     </ul>
   </div>
+  <style>
+    #my-gallery {
+      padding: 50px 15px;
+      text-align: center;
+    }
+    .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .gallery-grid img {
+      width: calc(33.333% - 20px); /* Tự động chia 3 ảnh/hàng trên máy tính */
+      min-width: 250px;            /* Kích thước tối thiểu để không bị ép quá nhỏ */
+      aspect-ratio: 4 / 3;         /* Ép tất cả ảnh về tỷ lệ ngang 4:3 */
+      object-fit: cover;           /* Đảm bảo ảnh không bị méo */
+      border: 4px solid #333;      /* Viền dày kiểu Pixel Art */
+      box-shadow: 4px 4px 0px #333; /* Đổ bóng cứng đặc trưng của Retro */
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .gallery-grid img:hover {
+      transform: translateY(-5px);  /* Nổi lên khi di chuột vào */
+      box-shadow: 8px 8px 0px #f7b233; /* Đổi màu bóng sang vàng khi hover */
+    }
+    /* Tự động chuyển thành 1 cột ảnh to trên giao diện điện thoại */
+    @media (max-width: 600px) {
+      .gallery-grid img {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <div id="my-gallery">
+    <h2 class="heading">Captured Pixels</h2>
+    <div class="gallery-grid">
+      <img src="assets/img/cfaa.jpg" alt="cfaa tac">
+      <img src="assets/img/forum.JPG" alt="FORUM NHTS">
+      <img src="assets/img/gallery-3.jpg" alt="YRC media project">
+      <img src="assets/img/gallery-4.jpg" alt="Photography artwork">
+      <img src="assets/img/gallery-5.jpg" alt="Creative shot">
+    </div>
+  </div>
   <div id="contact-me">
     <div id="contact-me-overlay">
       <h2 class="heading">Get in Touch
